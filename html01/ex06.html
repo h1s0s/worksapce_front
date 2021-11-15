@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <mata charset="UTF-8">
+        <title>html 기본태그</title>
+    </head>
+
+    <body>
+        <h2>목차</h2>
+        <ol>
+            <li><a href="ex01.html">h1~h6 태그</a></li>
+            <li><a href="ex02.html">p, br, hr, strong/b, em/i 태그</a></li>
+            <li><a href="ex03.html">ol, ul, li 태그</a></li>
+            <li><a href="ex04.html">img, a 태그</a></li>
+            <li><a href="ex05.html">table, tr, td 태그</a></li>
+            <li><a href="ex06.html">colspan, rowspan 태그</a></li>
+            <li><a href="ex07.html">thead, tbody, tfoot 태그</a></li>
+            <li><a href="ex08.html">테이블 연습문제-1</a></li>
+            <li><a href="ex09_resume.html">테이블 연습문제-2</a></li>
+        </ol>
+        <hr><!------------------------------------------------------------------>
+        <h1>html 기본태그</h1>
+        <h2>6. colspan, rowspan 태그</h2>
+        <p>테이블 가로 합치기</p>
+        <table border="1">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td colspan="2">2,2</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+        <p>테이블 세로 합치기</p>
+        <table border="1">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2,1</td>
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+        <p>테이블 가로 세로 합치기</p>
+        <table border="1">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2,1</td>
+                <td colspan="2">2,2</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+        <p>가로 세로 합치기 연습문제</p>
+        <table border="1">
+            <colgroup>
+                <col span="2" style="background-color:darkgray;">
+                <col span="2">
+            </colgroup>
+            <thaed>
+                <tr>
+                    <td colspan="2">모집직군</td>
+                    <td>모집전공</td>
+                    <td>비고</td>
+                </tr>
+            </thaed>
+            <tbody>
+                <tr>
+                    <td colspan="2">생산기술직</td>
+                    <td>화학공학</td>
+                    <td rowspan="3">전공관련 자격증 우대</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">생산지원직</td>
+                    <td>공무</td>
+                    <td>기계,전기</td>
+                </tr>
+                <tr>
+                    <td>안전환경</td>
+                    <td>안전,환경</td>
+                </tr>
+                <tr>
+                    <td colspan="2">연구개발직</td>
+                    <td>화학,화학공학</td>
+                    <td>석사</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

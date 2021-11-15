@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*CONTENTS2>ASIDE----------------------------------------------------------------*/
+#wrap #contents2 #aside {
+    width: 180px;
+    float: left;
+    margin: 0px 10px;
+}
+#wrap #contents2 #aside h2 {
+    background-color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+}
+#wrap #contents2 #aside ul li {
+    border: 1px solid #A6A6A6;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 0px 0px;
+}
+#wrap #contents2 #aside ul li a:hover {
+    font-weight: bold;
+}
+/*CONTENTS2>MAIN--------------------------------------------------------------------*/
+#wrap #contents2 #main {
+    width: 800px;
+    float: left;
+    margin: 0px 0px;
+}
+/*CONTENTS2>MAIN>MAIN-HEADER--------------------------------------------------------*/
+#wrap #contents2 #main #main-header {
+    border-bottom: 2px solid #a6a6a6;
+    margin: 20px 0px 0px 0px;
+}
+#wrap #contents2 #main #main-header h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+#wrap #contents2 #main #main-header ul {
+    float: right;
+}
+#wrap #contents2 #main #main-header ul li {
+    float: left;
+}
+#wrap #contents2 #main #main-header ul li:after {
+    content:">";
+}
+#wrap #contents2 #main #main-header ul li.last:after {
+    content:"";
+}
+/*CONTENTS2>MAIN>MAIN-BODY--------------------------------------------------------*/
+#wrap #contents2 #main #main-body #search {
+    float:right;
+    margin: 30px 0px 10px 0px;
+    padding: 0px 0px 0px 500px;
+}
+#wrap #contents2 #main #main-body #search button{
+    border: 1px solid #999999;
+    background-color: #dddddd;
+    width: 50px;
+    height: 25px;
+}
+#wrap #contents2 #main #main-body #table th {
+    background-color: #DDDDDD;
+    border-bottom : 1px dotted #888888;
+    padding: 5px 0px;
+    font-size: 12px;
+}
+#wrap #contents2 #main #main-body #table tr:hover {
+    background-color: #DDDDDD;
+}
+#wrap #contents2 #main #main-body #table td {
+    border-bottom : 1px dotted #888888;
+    padding: 5px 0px;
+    font-size: 12px;
+}
+#wrap #contents2 #main #main-body #table td.last {
+    border-bottom : 0px;
+}
+#wrap #contents2 #main #main-body #table>table {
+    width: 800px;
+    float: left;
+    text-align: center;
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    border-collapse: collapse;
+}
+/*CONTENTS2>MAIN>MAINFOOT--------------------------------------------------------*/
+#wrap #contents2 #main #mainfoot {
+    /* float:left; */
+    margin: 10px 0px;
+}
+
+#wrap #contents2 #main #mainfoot #list {
+    float: left;
+    width: 750px;
+}
+#wrap #contents2 #main #mainfoot #list ul {
+    float: left;
+    margin: 0px 0px 0px 325px;
+}
+#wrap #contents2 #main #mainfoot ul>li {
+    float: left;
+    margin: 0px 8px 0px 0px;
+}
+#wrap #contents2 #main #mainfoot ul>li>a:hover {
+    color: #79B30B;
+    font-weight: bold;
+}
+#wrap #contents2 #main #mainfoot ul>li.last {
+    margin: 0px 0px 0px 0px;
+}
+#wrap #contents2 #main #mainfoot button {
+    float: right;
+    border: 1px solid #999999;
+    background-color: #dddddd;
+    width: 50px;
+    height: 25px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            .box {
+                width: 200px;
+                height: 100px;
+
+                border: 4px solid #000000;
+            }
+            .div-round-all {
+                border-radius: 50px;
+                
+                text-align: center;
+            }
+            .div-round-each {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 40px;
+
+                
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box div-round-all">
+            버튼 1
+        </div>
+        <hr>
+        <div class="box div-round-each">
+            버튼 2
+        </div>
+        
+
+    </body>
+
+</html>

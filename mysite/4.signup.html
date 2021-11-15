@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>한상선 홈페이지</title>
+        <link rel="stylesheet" href="./assets/css/mysite.css">
+        <link rel="stylesheet" href="./assets/css/signup.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header" class="clearfix">
+                <h1><a href="1.main.html">Mysite</a></h1>
+                <ul>
+                    <li><a href="5.login.html">로그인</a></li>
+                    <li><a href="4.signup.html">회원가입</a></li>
+                </ul>
+            </div>
+            <div id="nav" class="clearfix">
+                <ul>
+                    <li>입사지원서</li>
+                    <li><a href="2.bList.html">게시판</a></li>
+                    <li><a href="7.gallary.html">갤러리</a></li>
+                    <li><a href="6.visitorbook.html">방명록</a></li>
+                </ul>
+            </div>
+            <div id="contents2">
+                <div id="aside">
+                    <h2>회원</h2>
+                    <ul class="clearfix">
+                        <li><a href="">회원정보</a></li>
+                        <li><a href="5.login.html">로그인</a></li>
+                        <li><a href="4.signup.html">회원가입</a></li>
+                    </ul>
+                </div>
+                <div id="main" class="clearfix">
+                    <div id="main-header" class="clearfix">
+                        <h3>회원가입</h3>
+                        <ul>
+                            <li>홈</li>
+                            <li>회원</li>
+                            <li class="last">회원가입</li>
+                        </ul>
+                    </div>
+                    <div id="main-body" class="clearfix">
+                        <form action="" method="get">
+                            <!--아이디-->
+                            <div class="formgroup">
+                                <div class="formgroup">
+                                    <label class="form-text" for="txt-id">아이디</label>
+                                    <input id="txt-id" type="text" value="" placeholder="아이디를 입력하세요">
+                                </div>
+                            </div>
+                            <!--패스워드-->
+                            <div class="formgroup">
+                                <label class="form-text" for="txt-pw">패스워드</label>
+                                <input id="txt-pw" type="password" value="" placeholder="패스워드를 입력하세요">
+                            </div>
+                            <!-- 이름 -->
+                            <div class="formgroup">
+                                <label class="form-text" for="txt-name">이름</label>
+                                <input id="txt-name" type="text" value="" placeholder="이름을 입력하세요">
+                            </div>
+                            <!-- 프로필사진 -->
+                            <div class="formgroup">
+                                <label for="file" class="form-text">프로필사진</label>
+                                <input id="file" type="file" name="" value="">
+                            </div>
+                            <!-- 주소 -->
+                            <div class="formgroup">
+                                <label class="form-text adress" for="txt-adress">주소</label>
+                                <input id="txt-adressnumber" type="text" value="" placeholder="우편번호">
+                                <button>우편번호찾기</button>
+                                <input id="txt-adress" type="text" value="" placeholder="주소">
+                            </div>
+                            <!-- 이동통신사 -->
+                            <div class="formgroup">
+                                <label class="form-text" for="selcelt-boardtype">이동통신사</label>
+                                <select id="select-boardtype" name="board">
+                                <option value="">선택해주세요</option>
+                                <option value="boradl">SKT</option>
+                                <option value="borad2">KT</option>
+                                <option value="borad3">LG U+</option>
+                                <option value="borad4">SKT알뜰폰</option>
+                                <option value="borad5">KT알뜰폰</option>
+                                <option value="borad6">LG알뜰폰</option>
+                                </select>
+                            </div>
+                            <!-- 나이 -->
+                            <div class="formgroup">
+                                <span class="form-text">나이</span>
+
+                                <label for="rdo-10">10대</label>
+                                <input type="radio" id="rdo-10" name="age" value="age10" checked="checked">
+                                
+                                <label for="rdo-20">20대</label>
+                                <input type="radio" id="rdo-20" name="open" value="age20">
+                                
+                                <label for="rdo-30">30대</label>
+                                <input type="radio" id="rdo-30" name="open" value="age30">
+                                
+                                <label for="rdo-40">40대</label>
+                                <input type="radio" id="rdo-40" name="open" value="age40">
+                                
+                                <label for="rdo-other">기타</label>
+                                <input type="radio" id="rdo-other" name="open" value="age-otehr">
+                            </div>
+                            <!-- 취미 -->
+                            <div class="formgroup">
+                                <span class="form-text">취미</span>
+
+                                <label for="chk-book">독서</label>
+                                <input type="checkbox" id="chk-book" name="hobby" value="book">
+
+                                <label for="chk-music">음악</label>
+                                <input type="checkbox" id="chk-music" name="hobby" value="music">
+
+                                <label for="chk-trip">x여행</label>
+                                <input type="checkbox" id="chk-trip" name="hobby" value="trip">
+                                
+                                <label for="chk-movie">영화</label>
+                                <input type="checkbox" id="chk-movie" name="hobby" value="movie">
+                                
+                                <label for="chk-coding">코딩</label>
+                                <input type="checkbox" id="chk-coding" name="hobby" value="coding">
+                                
+                                <label for="chk-other">기타</label>
+                                <input type="checkbox" id="chk-other" name="hobby" value="other">
+                            </div>
+                            <!-- 자기소개 -->
+                            <div class="formgroup">
+                                <label class="form-text">자기소개</label>
+                                <textarea id="write"></textarea>
+                            </div>
+                            <div id="main-foot" class="clearfix">
+                                <button class="button" type="submit" value="upload">등 록</button>
+                                <button class="button" type="reset" value="reset">초기화</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div>copyright (c) 2021 한상선. All right reserved</div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*CONTENTS2>ASIDE----------------------------------------------------------------*/
+#wrap #contents2 #aside {
+    width: 180px;
+    float: left;
+    margin: 0px 10px;
+}
+#wrap #contents2 #aside h2 {
+    background-color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+}
+#wrap #contents2 #aside ul li {
+    border: 1px solid #A6A6A6;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 0px 0px;
+}
+#wrap #contents2 #aside ul li a:hover {
+    font-weight: bold;
+}
+/*CONTENTS2>MAIN--------------------------------------------------------------------*/
+#wrap #contents2 #main {
+    width: 800px;
+    float: left;
+    margin: 0px 0px;
+}
+/*CONTENTS2>MAIN>MAIN-HEADER--------------------------------------------------------*/
+#wrap #contents2 #main #main-header {
+    border-bottom: 2px solid #a6a6a6;
+    margin: 20px 0px 0px 0px;
+}
+#wrap #contents2 #main #main-header h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+#wrap #contents2 #main #main-header ul {
+    float: right;
+}
+#wrap #contents2 #main #main-header ul li {
+    float: left;
+}
+#wrap #contents2 #main #main-header ul li:after {
+    content:">";
+}
+#wrap #contents2 #main #main-header ul li.last:after {
+    content:"";
+}
+/*CONTENTS2>MAIN>MAIN-BODY--------------------------------------------------------*/
+/*CONTENTS2>MAIN>MAIN-FOOT--------------------------------------------------------*/

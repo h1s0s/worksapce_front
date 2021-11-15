@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            body, ol {
+                margin: 0px;
+                padding: 0px;
+            }
+            ol {
+                list-style-type: none;
+
+            }
+            ol>li {
+                float: left;
+            }
+            ol>li:after {
+                content:">";
+                margin: 0px 20px 0px 20px;
+            }
+            ol>li.last:after {
+                content: "";
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--breadcrumb(빵부스러기라는 뜻, 사이트경로를 뜻함(메인>메뉴>프리미엄피자))-->
+        <ol>
+            <li>홈</li>
+            <li>게시판</li>
+            <li>일반게시판</li>
+            <li class="last">리스트</li>
+        </ol>
+        
+
+    </body>
+
+</html>

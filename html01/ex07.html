@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang=ko>
+    <haed>
+        <mate charset="UTF-8">
+        <title>html 기본태그</title>
+    </haed>
+
+    <body>
+        <h2>목차</h2>
+        <ol>
+            <li><a href="ex01.html">h1~h6 태그</a></li>
+            <li><a href="ex02.html">p, br, hr, strong/b, em/i 태그</a></li>
+            <li><a href="ex03.html">ol, ul, li 태그</a></li>
+            <li><a href="ex04.html">img, a 태그</a></li>
+            <li><a href="ex05.html">table, tr, td 태그</a></li>
+            <li><a href="ex06.html">colspan, rowspan 태그</a></li>
+            <li><a href="ex07.html">thead, tbody, tfoot 태그</a></li>
+            <li><a href="ex08.html">테이블 연습문제-1</a></li>
+            <li><a href="ex09_resume.html">테이블 연습문제-2</a></li>
+        </ol>
+        <hr><!------------------------------------------------------------------>
+        <h1>html 기본태그</h1>
+        <h2>7. thead, tbody, tfoot 태그</h2>
+        <table border="1">
+
+            <thead><!--테이블의 제목부분을 나타냄-->
+                <tr>
+                    <th>번호</th><!--th태그를 사용하여 강조효과를 줌-->
+                    <th>학교수</th>
+                    <th>학급수</th>
+                    <th>학생수</th>
+                    <th>교원수</th>
+                </tr>
+            </thead>
+
+            <tbody><!--테이블의 본문부분을 나타냄 -->
+                <tr>
+                    <th>1</th>
+                    <td>117</td>
+                    <td>252</td>
+                    <td>5547</td>
+                    <td>474</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>111</td>
+                    <td>1720</td>
+                    <td>37686</td>
+                    <td>2632</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>44</td>
+                    <td>699</td>
+                    <td>21274</td>
+                    <td>1412</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <colgroup>
+                <col style="width:120px"> <!-- style 시트, css 요소-->
+                <col style="width:60px"> <!--css요소와 html을 겹쳐쓰는건 지양-->
+                <col style="width:60px"> <!--px외에 %로 표현 가능, 창이 늘어남에 따라 표도 늘어남-->
+                <col style="width:80px">
+                <col style="width:100px">
+            </colgroup>
+            <caption>제주특별자치도 학교현황</caption><!--테이블 제목-->
+            <thead>
+                <tr>
+                    <th>구분</th><!--th태그를 사용하여 강조효과를 줌-->
+                    <th>학교수</th>
+                    <th>학급수</th>
+                    <th>학생수</th>
+                    <th>교원수</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>유치원</th>
+                    <td>117</td>
+                    <td>252</td>
+                    <td>5547</td>
+                    <td>474</td>
+                </tr>
+                <tr>
+                    <th>초등학교</th>
+                    <td>111</td>
+                    <td>1720</td>
+                    <td>37686</td>
+                    <td>2632</td>
+                </tr>
+                <tr>
+                    <th>중학교</th>
+                    <td>44</td>
+                    <td>699</td>
+                    <td>21274</td>
+                    <td>1412</td>
+                </tr>
+            </tbody>
+
+            <tfoot><!--테이블의 요약부분(합계 등)을 나타냄-->
+                <th>합계</th>
+                <td>272</td>
+                <td>2671</td>
+                <td>64507</td>
+                <td>4518</td>
+            </tfoot>
+
+        </table>
+    </body>
+</html>

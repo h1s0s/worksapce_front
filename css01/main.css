@@ -1,0 +1,5 @@
+@charset "UTF-8"; /* utf-8로 읽어주세요 선언(한글이 안읽히는 경우가 있음)*/
+
+h2 {color: #0000ff;}
+h3 {color: #ff0000;}
+li {color: #ff00ff}

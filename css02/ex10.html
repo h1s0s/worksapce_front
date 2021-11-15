@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            .box-red {
+                width: 300px;
+                background-color: #FF0000;
+                color: #FFFFFF;
+
+                /* margin: 10px; */
+
+                /* margin-top: 10px;
+                margin-right: 20px;
+                margin-bottom: 30px;
+                margin-left: 40px; */
+
+                margin: 10px 20px 30px 40px; /*시계방향*/
+
+                /* margin: 20px 50px; 상하, 좌우 순서 */
+            }
+            .box-blue {
+                width: 300px;
+                background-color: #0000FF;
+                color: #FFFFFF;
+
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box-red">
+            CSS에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이 어떻게 작용되는지 알아봅시다.
+        </div>
+        <div class="box-blue">
+            CSS에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이 어떻게 작용되는지 알아봅시다.
+        </div>
+    </body>
+
+</html>

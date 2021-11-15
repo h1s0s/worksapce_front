@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>한상선 홈페이지</title>
+        <link rel="stylesheet" href="./assets/css/mysite.css">
+        <link rel="stylesheet" href="./assets/css/boardwrite.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header" class="clearfix">
+                <h1><a href="1.main.html">Mysite</a></h1>
+                <ul>
+                    <li><a href="5.login.html">로그인</a></li>
+                    <li><a href="4.signup.html">회원가입</a></li>
+                </ul>
+            </div>
+            <div id="nav" class="clearfix">
+                <ul>
+                    <li>입사지원서</li>
+                    <li><a href="2.bList.html">게시판</a></li>
+                    <li><a href="7.gallary.html">갤러리</a></li>
+                    <li class="last"><a href="6.visitorbook.html">방명록</a></li>
+                </ul>
+            </div>
+            <div id="contents2">
+                <div id="aside">
+                    <h2>게시판</h2>
+                    <ul class="clearfix">
+                        <li><a href="2.bList.html">일반 게시판</a></li>
+                        <li><a href="">댓글 게시판</a></li>
+                        <li><a href="">첨부 게시판</a></li>
+                    </ul>
+                </div>
+                <div id="main" class="clearfix">
+                    <div id="main-header" class="clearfix">
+                        <h3>일반 게시판</h3>
+                        <ul>
+                            <li>홈</li>
+                            <li>게시판</li>
+                            <li class="last">일반게시판</li>
+                        </ul>
+                    </div>
+                    <div id="main-body" class="clearfix">
+                        <form action="" method="get">
+                            <!-- 게시판선택 -->
+                            <div class="formgroup">
+                                <label class="form-text" for="selcelt-boardtype">게시판선택</label>
+                                <select id="selcelt-boardtype" name="board">
+                                    <option value="">선택해주세요</option>
+                                    <option value="boradl">일반게시판</option>
+                                    <option value="borad2">댓글게시판</option>
+                                    <option value="borad3">첨부게시판</option>
+                                </select>
+                            </div>
+                            <!-- 게시판제목 -->
+                            <div class="formgroup">
+                                <label class="form-text" for="txt-title">제목</label>
+                                <input id="txt-title" type="text" value="" placeholder="제목을 입력해주세요">
+                            </div>
+                            <!-- 게시판암호 -->
+                            <div class="formgroup">
+                                <label class="form-text" for="password">비밀번호</label>
+                                <input id="password" type="password" value="" placeholder="패스워드를 입력해주세요">
+                            </div>
+                            <!-- 게시판공개범위 -->
+                            <div class="formgroup">
+                                <span class="form-text">공개범위</span>
+
+                                <label for="rdo-me">본인</label>
+                                <input type="radio" id="rdo-me" name="open" value="me">
+                                
+                                <label for="rdo-login">로그인회원</label>
+                                <input type="radio" id="rdo-login" name="open" value="login">
+                                
+                                <label for="rdo-friend">친구</label>
+                                <input type="radio" id="rdo-friend" name="open" value="friend">
+                                
+                                <label for="rdo-all">전체</label>
+                                <input type="radio" id="rdo-all" name="open" value="all" checked="checked">
+                            </div>
+                            <!-- 게시판허용범위 -->
+                            <div class="formgroup">
+                                <span class="form-text">허용범위</span>
+
+                                <label for="chk-reply">댓글허용</label>
+                                <input type="checkbox" id="chk-reply" name="agree" value="re">
+
+                                <label for="chk-answer">답글허용</label>
+                                <input type="checkbox" id="chk-answer" name="agree" value="write">
+
+                                <label for="chk-like">좋아요허용</label>
+                                <input type="checkbox" id="chk-like" name="agree" value="like" checked="checked">
+                            </div>
+                            <!-- 내용 -->
+                            <div class="formgroup">
+                                <textarea id="write"></textarea>
+                            </div>
+                            <!-- 첨부파일 -->
+                            <div class="formgroup">
+                                <label for="file" class="form-text">첨부파일</label>
+                                <input id="file" type="file" name="" value="">
+                            </div>
+                            <div id="main-foot" class="clearfix">
+                                <button class="button" type="submit" value="upload">등 록</button>
+                                <button class="button" type="reset" value="reset">초기화</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div>copyright (c) 2021 한상선. All right reserved</div>
+            </div>
+        </div>
+    </body>
+</html>

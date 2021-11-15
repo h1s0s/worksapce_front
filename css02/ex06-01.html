@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            body, .body {
+                font-family: "맑은 고딕";
+                font-size: 15px;
+                color: #fff;
+            }
+            .btnRed {
+                width: 90px;
+                padding: 5px 5px 5px 5px;
+                background-color: #f00;
+                border: 1px solid #000;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .btnBlue {
+                width: 100px;
+                height: 50px;
+                background-color: #0ff;
+                border: 1px solid #000;
+                border-radius: 5px;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            button{
+                width: 100px;
+                padding: 5px 5px 5px 5px;
+                background-color: #f00;
+                border-radius: 5px;
+            }
+            button:hover{
+                background-color: #0f0;
+                cursor: pointer;
+            }
+            .btn-login {
+                width: 100px;
+                border: 1px solid #000;
+                background-color: #f00;
+                border-radius: 5px;
+                text-align: center;
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="btnRed">저장버튼</div>
+        <br>
+        <div class="btnBlue">저장버튼</div>
+        <br>
+        <button type="submit" uid="save" value="" class="body">저장버튼</button>
+        <br><br>
+        <a href="http://www.naver.com" class="btn-login">로그인</a>
+    </body>
+
+</html>

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body {
+    font-family: "맑은 고딕";
+    font-size: 17px;
+}
+h1 {
+    font-family: 궁서;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 20px;
+}
+.wi:visited {
+    color: blue;
+    text-decoration: underline;
+}
+.his {
+    background-color : #d9d9d9;
+}
+.his p {
+    text-indent: 30px;
+    line-height: 35px;
+}
+ol>li {
+    list-style-type: none;
+}
+ul>li {
+    list-style-type: square;
+}
+
+/* 테이블 스타일 */
+table>thead {
+    background-color: #C8EBFA;
+}
+table>tbody>tr:hover {
+    background-color: #EDD3ED;
+}
+.speed:before {content: "약 ";}
+.speed:after {content: " (MB/초)";}
+.speed {
+    text-align: right;
+}
+/*가상클래스 순서 link -> visited -> hover -> active 권장. 순서 안지키면 오류가 생길 수 있음.*/
+/*방문전*/
+tbody tr td a:link{
+    color: #000000;
+    text-decoration: none;
+}
+/*방문후*/
+tbody tr td a:visited{
+    color: #000000;
+}
+/*마우스오버*/
+tbody tr td a:hover{
+    color: #0000FF;
+    text-decoration: overline;
+}
+/*클릭시*/
+tbody tr td a:active{
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+/* 텍스트 스타일*/
+/* 글씨 강조 */
+.ita {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* 컬러 */
+.red {
+    color: #FF0000;
+}
+.blue {
+    color: #0000FF;
+}
+.green {
+    color: #00FF00;
+}
+
+/* 글씨 꾸미기 */
+.unl {
+    text-decoration: underline;
+    
+}
